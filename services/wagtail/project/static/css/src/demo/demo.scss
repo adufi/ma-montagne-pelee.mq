@@ -258,6 +258,11 @@ header.header {
 
 .stats.section {
 
+    .ui.statistics {
+        display: flex;
+        justify-content: center;
+    }
+
     .icon {
         &.tree {
             color: #057720b8;
@@ -283,57 +288,6 @@ header.header {
 
 .news {
 
-}
-
-
-.history {
-    font-family: 'Vollkorn', sans-serif;
-}
-
-
-.gallery {
-    margin: 0;
-    padding: 0;
-}
-
-
-.testimonials {
-    // Tmp
-    overflow: hidden;
-
-    .list {
-        box-shadow: none;
-        border-radius: 0;
-
-        &-row {
-            display: flex;
-            flex-direction: row;
-        }
-
-        .list-item {
-            border: 0;
-        }
-    }
-
-    .box {
-        width: 300px;
-        height: 300px;
-
-        article {
-            i { margin: 10px; }
-        }
-
-        span {
-
-            &.quote {}
-
-            &.author {
-                display: block;
-                text-align: right;
-                font-weight: bold;
-            }
-        }
-    }
 }
 
 
@@ -479,6 +433,48 @@ header.header {
 
     }
 }
+
+
+.testimonials {
+    ul {
+        li {
+            margin: 1rem 0;
+            
+            .ui.message {
+                article {
+                    i { margin: 10px; }
+                }
+        
+                span {
+        
+                    &.quote {}
+        
+                    &.author {
+                        display: block;
+                        text-align: right;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+/* TODO */
+
+.history {
+    font-family: 'Vollkorn', sans-serif;
+}
+
+
+.gallery {
+    margin: 0;
+    padding: 0;
+}
+
+
 
 .content {
     margin: auto;
