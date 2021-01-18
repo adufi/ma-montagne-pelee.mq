@@ -1,0 +1,576 @@
+{% load static %}
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'vendor/bs4/css/bootstrap-grid.min.css' %}">
+    <link rel="stylesheet" href="{% static 'vendor/semantic/semantic.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/demo/demo.css' %}">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="page">
+        <header class="header">
+            
+            <div class="menus">
+            
+                <div class="menus-trigger">
+                    <i class="icon bars" onclick="openMenu()"></i>
+                    <i class="icon close" onclick="closeMenu()"></i>
+                </div>
+            
+                <nav class="menus-normal">
+            
+                    <ul class="menu menu-row socials">
+            
+                        <li class="menu-item">
+                            <a href="#">
+                                <i class="icon facebook f"></i>
+                            </a>
+                        </li>
+            
+                        <li class="menu-item">
+                            <a href="#">
+                                <i class="icon instagram"></i>
+                            </a>
+                        </li>
+            
+                        <li class="menu-item">
+                            <a href="#">
+                                <i class="icon twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+            
+                    <ul class="menu menu-row links">
+                        <li class="menu-item" href="#">Accueil</li>
+                        <li class="menu-item" href="#">Histoire</li>
+                        <li class="menu-item" href="#">Evènements</li>
+                        <li class="menu-item" href="#">Contact</li>
+                        <li class="menu-item" href="#"><a class="button is-danger is-rounded">Faire un don</a></li>
+                    </ul>
+                </nav>
+            </div>
+        
+            <div class="header-overlay">
+        
+                Ce site s'incrit dans la découverte du patrimoine et de l'UNESCO
+                <h1>La Montagne Pelée</h1>
+                Rejoignez notre communauté 
+                <div class="ui labeled button">
+                    <a class="ui button" href="#a_newsletter">
+                        <i class="heart icon"></i>
+                        Nous Rejoindres!
+                    </a>
+                    <a class="ui basic left pointing label">
+                        1,048
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <div class="section stats">
+            <!-- <h2 class="title">Quelques chiffres</h2> -->
+
+            <div class="wrapper">
+                <div class="ui statistics">
+                    <div class="statistic">
+                        <div class="value">
+                            <i class="earlybirds icon"></i>53
+                        </div>
+                        <div class="label">
+                            Espèces d'oiseaux
+                        </div>
+                    </div>
+                    <div class="statistic">
+                        <div class="text value">
+                            + DE DIX<br>
+                            MILLES
+                        </div>
+                        <div class="label">
+                            visites par mois
+                        </div>
+                    </div>
+                    <div class="statistic">
+                        <div class="value">
+                            <i class="tree icon"></i> 367
+                        </div>
+                        <div class="label">
+                            Variétés de plantes
+                        </div>
+                    </div>
+                    <div class="statistic">
+                        <div class="value">
+                            <img src="https://semantic-ui.com/images/avatar/small/joe.jpg" class="ui circular inline image">
+                            42
+                        </div>
+                        <div class="label">
+                            Membres d'équipe
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section gallery">
+        
+            <h2 class="title">Gallerie</h2>
+        
+            <div class="tiles">
+        
+                <ul class="tiles-list">
+        
+                    <li class="tiles-item">
+        
+                        <a href="#" class="card">
+        
+                            <div class="card-recto">
+                                <div class="card-text">
+                                    <p>Sample</p>
+                                </div>
+                            </div>
+        
+                            <div class="card-verso">
+                                <img src="/media/demo/1.jpg" loading="lazy" />
+                            </div>
+                        </a>
+                    </li>
+        
+                    <li class="tiles-item">
+        
+                        <a href="#" class="card">
+        
+                            <div class="card-recto">
+                                <div class="card-text">
+                                    <p>Sample</p>
+                                </div>
+                            </div>
+        
+                            <div class="card-verso">
+                                <img src="/media/demo/2.jpg" loading="lazy" />
+                            </div>
+                        </a>
+                    </li>
+        
+                    <li class="tiles-item">
+        
+                        <a href="#" class="card">
+        
+                            <div class="card-recto">
+                                <div class="card-text">
+                                    <p>Sample</p>
+                                </div>
+                            </div>
+        
+                            <div class="card-verso">
+                                <img src="/media/demo/3.jpg" loading="lazy" />
+                            </div>
+                        </a>
+                    </li>
+        
+                    <li class="tiles-item">
+        
+                        <a href="#" class="card">
+        
+                            <div class="card-recto">
+                                <div class="card-text">
+                                    <p>Sample</p>
+                                </div>
+                            </div>
+        
+                            <div class="card-verso">
+                                <img src="/media/demo/4.jpg" loading="lazy" />
+                            </div>
+                        </a>
+                    </li>
+        
+                    <li class="tiles-item">
+        
+                        <a href="#" class="card">
+        
+                            <div class="card-recto">
+                                <div class="card-text">
+                                    <p>Sample</p>
+                                </div>
+                            </div>
+        
+                            <div class="card-verso">
+                                <img src="/media/demo/5.jpg" loading="lazy" />
+                            </div>
+                        </a>
+                    </li>
+        
+                    <li class="tiles-item">
+        
+                        <a href="#" class="card">
+        
+                            <div class="card-recto">
+                                <div class="card-text">
+                                    <p>Sample</p>
+                                </div>
+                            </div>
+        
+                            <div class="card-verso">
+                                <img src="/media/demo/6.jpg" loading="lazy" />
+                            </div>
+                        </a>
+                    </li>
+        
+                </ul>
+            </div>
+        </div>
+
+        <div class="section recent-news">
+        
+            <!-- <h2 class="title">Evènements & Actualités</h2> -->
+        
+            <div class="recent-news-wrapper">
+        
+                <div class="events">
+                
+                    <h3 class="title">Derniers evènements</h3>
+                
+                    <div class="content">
+                
+                        <ul class="list list-column">
+                
+                            <li class="list-item ui floating message">
+                
+                                <a class="list-link" href="#">
+                
+                                    <div class="notification">
+                
+                                        <div class="notification-header">
+                
+                                            <div class="notification-title">
+                                                Réunion
+                                            </div>
+                
+                                            <div class="notification-date">
+                                                23 sept &#183; 18h
+                                            </div>
+                                        </div>
+                
+                                        <div class="notification-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet felis id
+                                            felis facilisis varius.
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                
+                            <li class="list-item ui floating message">
+                
+                                <a class="list-link" href="#">
+                
+                                    <div class="notification">
+                
+                                        <div class="notification-header">
+                
+                                            <div class="notification-title">
+                                                Réunion
+                                            </div>
+                
+                                            <div class="notification-date">
+                                                23 sept &#183; 18h
+                                            </div>
+                                        </div>
+                
+                                        <div class="notification-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet felis id
+                                            felis facilisis varius.
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                
+                            <li class="list-item ui floating message">
+                
+                                <a class="list-link" href="#">
+                
+                                    <div class="notification">
+                
+                                        <div class="notification-header">
+                
+                                            <div class="notification-title">
+                                                Randonnée
+                                            </div>
+                
+                                            <div class="notification-date">
+                                                23 sept &#183; 18h
+                                            </div>
+                                        </div>
+                
+                                        <div class="notification-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet felis id
+                                            felis facilisis varius.
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                
+                            <li class="list-item ui floating message">
+                
+                                <a class="list-link" href="#">
+                
+                                    <div class="notification">
+                
+                                        <div class="notification-header">
+                
+                                            <div class="notification-title">
+                                                Rassemblement
+                                            </div>
+                
+                                            <div class="notification-date">
+                                                23 sept &#183; 18h
+                                            </div>
+                                        </div>
+                
+                                        <div class="notification-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet felis id
+                                            felis facilisis varius.
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="news">
+                
+                    <h3 class="title">Dernieres news</h3>
+                
+                    <div class="content">
+                
+                        <div class="tiles">
+                
+                            <ul class="tiles-list">
+                
+                                <li class="tiles-item">
+                
+                                    <div class="article">
+                
+                                        <div class="article-bg">
+                                            <img src="http://localhost:3000/res/tiles/1.jpg" />
+                                        </div>
+                
+                                        <div class="article-overlay">
+                
+                                            <div class="article-content">
+                
+                                                <div class="article-content-title">
+                                                    <a href="#">
+                                                        Stop the deforestation
+                                                    </a>
+                                                </div>
+                
+                                                <span class="article-content-meta">
+                                                    by
+                                                    <a href="#">Arnaud</a>
+                                                    on
+                                                    <time dateTime="23 SEPTEMBER 2019">23 SEPT. 2019</time>
+                                                </span>
+                
+                                                <div class="article-content-keywords">
+                                                    <a href="#">Information</a>
+                                                    <a href="#">Evènement</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                
+                                <li class="tiles-item">
+                
+                                    <div class="article">
+                
+                                        <div class="article-bg">
+                                            <img src="http://localhost:3000/res/tiles/1.jpg" />
+                                        </div>
+                
+                                        <div class="article-overlay">
+                
+                                            <div class="article-content">
+                
+                                                <div class="article-content-title">
+                                                    <a href="#">
+                                                        Stop the deforestation
+                                                    </a>
+                                                </div>
+                
+                                                <span class="article-content-meta">
+                                                    by
+                                                    <a href="#">Arnaud</a>
+                                                    on
+                                                    <time dateTime="23 SEPTEMBER 2019">23 SEPT. 2019</time>
+                                                </span>
+                
+                                                <div class="article-content-keywords">
+                                                    <a href="#">Information</a>
+                                                    <a href="#">Evènement</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                
+                                <li class="tiles-item">
+                
+                                    <div class="article">
+                
+                                        <div class="article-bg">
+                                            <img src="http://localhost:3000/res/tiles/1.jpg" />
+                                        </div>
+                
+                                        <div class="article-overlay">
+                
+                                            <div class="article-content">
+                
+                                                <div class="article-content-title">
+                                                    <a href="#">
+                                                        Stop the deforestation
+                                                    </a>
+                                                </div>
+                
+                                                <span class="article-content-meta">
+                                                    by
+                                                    <a href="#">Arnaud</a>
+                                                    on
+                                                    <time dateTime="23 SEPTEMBER 2019">23 SEPT. 2019</time>
+                                                </span>
+                
+                                                <div class="article-content-keywords">
+                                                    <a href="#">Information</a>
+                                                    <a href="#">Evènement</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                
+                                <li class="tiles-item">
+                
+                                    <div class="article">
+                
+                                        <div class="article-bg">
+                                            <img src="http://localhost:3000/res/tiles/1.jpg" />
+                                        </div>
+                
+                                        <div class="article-overlay">
+                
+                                            <div class="article-content">
+                
+                                                <div class="article-content-title">
+                                                    <a href="#">
+                                                        Stop the deforestation
+                                                    </a>
+                                                </div>
+                
+                                                <span class="article-content-meta">
+                                                    by
+                                                    <a href="#">Arnaud</a>
+                                                    on
+                                                    <time dateTime="23 SEPTEMBER 2019">23 SEPT. 2019</time>
+                                                </span>
+                
+                                                <div class="article-content-keywords">
+                                                    <a href="#">Information</a>
+                                                    <a href="#">Evènement</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="a_newsletter" class="section newsletter">
+        
+            <h2 class="title">Newsletter</h2>
+        
+            <div class="wrapper">
+
+                <form>
+                    <input class="input" type="text" placeholder="Text input" />
+                    <button type="sumbit">
+                        <i class="icon paper plane"></i>
+                    </button>
+                </form>
+        
+                <div class="newsletter-input d-none">
+                    <input class="input" type="text" placeholder="Text input" />
+                    <button type="sumbit">
+                        <i class="icon paper plane"></i>
+                    </button>
+                </div>
+            </div>
+        
+            <h4 class="subtitle">Restez en contact avec nous</h4>
+            <h4 class="subtitle">Stay in touch with us</h4>
+        </div>
+
+        <div class="section contact">
+        
+            <h2 class="title">Contact</h2>
+        
+            <h4 class="subtitle">Une question ? N'hésitez pas</h4>
+            <h4 class="subtitle">A Question ? Don't hesitate</h4>
+        
+            <div class="wrapper">
+        
+                <form method="post" action="#" class="ui form">
+
+                    <div class="field">
+                        <!-- <label>Noms</label> -->
+                        <input type="text" name="names" placeholder="Noms">
+                    </div>
+
+                    <div class="field">
+                        <!-- <label>Email</label> -->
+                        <input type="email" name="email" placeholder="Email">
+                    </div>
+
+                    <div class="field">
+                        <label>Message</label>
+                        <textarea></textarea>
+                    </div>
+
+                    <div class="field">
+                        <div class="ui checkbox">
+                            <input type="checkbox" tabindex="0" class="hidden">
+                            <label>S'inscrire à la newsletter</label>
+                        </div>
+                    </div>
+
+                    <button class="ui button" type="submit">Submit</button>
+        
+                    <p class="help is-success">This username is available</p>
+                    <p class="help is-danger">This email is invalid</p>
+        
+                </form>
+        
+        
+            </div>
+        
+        </div>
+    </div>
+</body>
+<script src="{% static 'js/demo/demo.js' %}"></script>
+</html>
